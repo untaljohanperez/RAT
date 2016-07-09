@@ -1,0 +1,15 @@
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\PuntualidApp.csprojResolveAssemblyReference.cache
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\bin\Debug\PuntualidApp.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\bin\Debug\PuntualidApp.pdb
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\bin\Debug\PuntualidApp.PuntualidApp.apk
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\bin\Debug\PuntualidApp.PuntualidApp-Signed.apk
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\PuntualidApp.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\PuntualidApp.pdb
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\android\bin\PuntualidApp.PuntualidApp.apk
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\res\layout\main.xml
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\res\values\strings.xml
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\res\drawable\icon.png
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\R.cs.flag
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\uploadflags.txt
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\PuntualidApp.dll.mdb
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\bin\Debug\PuntualidApp.dll.mdb

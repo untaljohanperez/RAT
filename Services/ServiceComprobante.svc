@@ -1,0 +1,8 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" 
+    Service="ServiceComprobante" CodeBehind="~/App_Code/ServiceComprobante.cs" 
+    Factory="System.ServiceModel.Activation.WebServiceHostFactory"
+    %>
+
+
+
+

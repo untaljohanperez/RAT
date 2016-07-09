@@ -1,0 +1,11 @@
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\PuntualidApp.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\Mono.Android.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\mscorlib.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\System.Core.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\System.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\System.Net.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\System.Net.Http.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\System.Xml.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\System.Xml.Linq.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\System.Runtime.Serialization.dll
+G:\SION\trunk\SITIOS WEB\RAP\PuntualidApp\PuntualidApp\obj\Debug\assemblies\System.ServiceModel.Internals.dll

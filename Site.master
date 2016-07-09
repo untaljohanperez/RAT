@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" style="background-color: WHITE;">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>REGISTRO AUTOMATICO DE PAGOS</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <link href="Content/animate.css" rel="stylesheet" />
+    <script src="Scripts/sweetalert.min.js" type="text/javascript"></script>
+    <link href="Content/sweetalert.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="Scripts/scriptDefault.js" type="text/javascript"></script>
+    <script src="Scripts/ReferenciasScript.js?1" type="text/javascript"></script>
+    <link href="Content/waitMe.css" rel="stylesheet" />
+    <script src="Scripts/waitMe.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.steps.min.js" type="text/javascript"></script>
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="../" class="navbar-brand logo">Registro Automático de Pagos</a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="Default.aspx">Formatos</a>
+                        </li>
+                        <li>
+                            <a href="ReferenciaRecibo.aspx">Referencia Recibos</a>
+                        </li>
+                        <li>
+                            <a href="http://www.unac.edu.co" target="_blank">UNAC</a>
+                        </li>
+                        <%--<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Paper <span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="download">
+                                <li><a href="http://jsfiddle.net/bootswatch/ndax7sh7/">Open Sandbox</a></li>
+                                <li class="divider"></li>
+                                <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
+                                <li><a href="./bootstrap.css">bootstrap.css</a></li>
+                            </ul>
+                        </li>--%>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" id="lblsesion" runat="server" href="Login.aspx" >Iniciar Sesión <span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="lblsesion">
+                                <li>
+                                    <a href="Logout.aspx" >Cerrar Sesión</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+
+
+
+                <div class="container">
+                    <div class="main">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+        <asp:UpdateProgress runat="server" ID="prog" ClientIDMode="Static" DisplayAfter="100" AssociatedUpdatePanelID="UpdatePanel1">
+            <ProgressTemplate>
+                <div class="cargando">
+                    <div>
+                        <div class="waitMe_progress ios">
+                            <div class="waitMe_progress_elem1" style="background: #000"></div>
+                            <div class="waitMe_progress_elem2" style="background: #000"></div>
+                            <div class="waitMe_progress_elem3" style="background: #000"></div>
+                            <div class="waitMe_progress_elem4" style="background: #000"></div>
+                            <div class="waitMe_progress_elem5" style="background: #000"></div>
+                            <div class="waitMe_progress_elem6" style="background: #000"></div>
+                            <div class="waitMe_progress_elem7" style="background: #000"></div>
+                            <div class="waitMe_progress_elem8" style="background: #000"></div>
+                            <div class="waitMe_progress_elem9" style="background: #000"></div>
+                            <div class="waitMe_progress_elem10" style="background: #000"></div>
+                            <div class="waitMe_progress_elem11" style="background: #000"></div>
+                            <div class="waitMe_progress_elem12" style="background: #000"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+        <div class="footer">
+          <!--  <div class="wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="widget">
+                            <h5 class="widgetheading">Informacion de Contacto</h5>
+                            <address>
+                                <strong>Departamento de Sistemas e Informática</strong><br>
+                                Version 3.00.2015.0311<br>
+                                Carrera 84 N° 33aa-1 La Castellana Medellin - Colombia
+                            </address>
+                            <p>
+                                <i class="icon-phone"></i>(034) 250-8328<br>
+                                <i class="icon-envelope-alt"></i>dsi@unac.edu.co 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/*
+waitMe - 1.15 [15.02.16]
+Author: vadimsva
+Github: https://github.com/vadimsva/waitMe
+*/
+.waitMe_container {position:relative;transform:translateZ(0);ace-visibility:hidden}
+body.waitMe_container {position:fixed;width:100%;height:100%}
+.waitMe_container .waitMe {position:absolute;top:0;left:0;right:0;bottom:0;z-index:9989;text-align:center;}
+.ww:hidden}
+.waitaitMe_container .waitMe * {font-family:sans-serif;font-size:14px;font-weight:initial;font-style:initial;line-height:initial;color:initial;text-decoration:initial;text-transform:initial;padding:initial;margin:initial}
+.waitMe_container .waitMe .waitMe_content {position:absolute;left:0;right:0;top:50%;
+.wvisibility:hidden}
+.waitMe_aitMe_container .waitMe .waitMe_progress {position:relative;font-size:0}
+.waitMe_container .waitMe .waitMe_progress > div {animation-fill-mode:both;display:inline-block;transform:translateZ(0);backface-visibility:hidden}
+.waitMe_container .waitMe .waitMe_text {position:relative;margin:20px 0 0}
+
+/* before load animation */
+body.waitMe_body {;heigh;height:100%}
+bt:100%}
+boheight:100%}
+body.waitMe_body.hideMe {transition:opacity .2s ease-in-out;opacity:0}
+body.waitMe_body .waitMe_container:not([data-waitme_id]) {position:fixed;z-index:9989;top:0;bottom:0;left:0;right:0;background:#fff}
+body.waitMe_body .waitMe_container:not([data-waitme_id]) > div {animation-fill-mode:both;position:absolute}
+body.waitMe_body .waitMe_container.progress > div {width:0;height:3px;top:0;left:0;background:#000;box-shadow:-5px 0 5px 2px rgba(0,0,0,.2);animation:progress_body 7s infinite ease-out}
+body.waitMe_body .waitMe_container.working > div {width:10%;height:3px;top:0;left:-10%;background:#000;box-shadow:-5px 0 5px 2px rgba(0,0,0,.2);animation:working_body 2s infinite linear}
+body.waitMe_body .waitMe_container.progress > div:after {content:'';position:absolute;top:0;bottom:60%;right:0;width:60px;border-radius:50%;opacity:.5;transform:rotate(3deg);box-shadow:#000 1px 0 6px 1px}
+body.waitMe_body .waitMe_container.img > div {width:100%;height:100%;text-align:center;background-position:center!important;background-repeat:no-repeat!important}
+body.waitMe_body .waitMe_container.text > div {width:100%;top:45%;text-align:center}
+@keyframes progress_body {
+	0% {width:0}
+	100% {width:100%}
+}
+@keyframes working_body {
+	0% {left:-10%}
+	100% {left:100%}
+}
+
+/* ios */
+.waitMe_progress.ios {/* margin:auto; */width: 20px;height: 20px;display: inline-block;text-align: center;position: relative;vertical-align: middle;margin-top: 15%;}
+.waitMe_progress.ios > div {width:12px;height:32px;position: absolute;left: 0;top: 0;opacity:0;border-radius:50px;box-shadow:0 0 3px rgba(0,0,0,.2);animation:ios 1s infinite linear}
+.waitMe_progress.ios .waitMe_progress_elem1 {transform: rotate(0deg) translate(0, -142%);animation-delay:0s}
+.waitMe_progress.ios .waitMe_progress_elem2 {transform: rotate(30deg) translate(0, -142%);animation-delay:-.9167s}
+.waitMe_progress.ios .waitMe_progress_elem3 {transform: rotate(60deg) translate(0, -142%);animation-delay:-.833s}
+.waitMe_progress.ios .waitMe_progress_elem4 {transform: rotate(90deg) translate(0, -142%);animation-delay:-.75s}
+.waitMe_progress.ios .waitMe_progress_elem5 {transform: rotate(120deg) translate(0, -142%);animation-delay:-.667s}
+.waitMe_progress.ios .waitMe_progress_elem6 {transform: rotate(150deg) translate(0, -142%);animation-delay:-.5833s}
+.waitMe_progress.ios .waitMe_progress_elem7 {transform: rotate(180deg) translate(0, -142%);animation-delay:-.5s}
+.waitMe_progress.ios .waitMe_progress_elem8 {transform: rotate(210deg) translate(0, -142%);animation-delay:-.41667s}
+.waitMe_progress.ios .waitMe_progress_elem9 {transform: rotate(240deg) translate(0, -142%);animation-delay:-.333s}
+.waitMe_progress.ios .waitMe_progress_elem10 {transform: rotate(270deg) translate(0, -142%);animation-delay:-.25s}
+.waitMe_progress.ios .waitMe_progress_elem11 {transform: rotate(300deg) translate(0, -142%);animation-delay:-.1667s}
+.waitMe_progress.ios .waitMe_progress_elem12 {transform: rotate(330deg) translate(0, -142%);animation-delay:-.0833s}
+ @keyframes ios {
+	0% {opacity:1}
+	100% {opacity:.25}
+}
+
+
+
+/* rotation */
+.waitMe_progress.rotation > div {width:60px;height:60px;margin:auto;border-radius:100%;border-width:6px;border-style:solid;border-left-color:transparent!important;border-right-color:transparent!important;border-bottom-color:transparent!important;animation:rotation 1s infinite linear}
+@keyframes rotation {
+	0% {transform:rotate(0deg)}
+	100% {transform:rotate(360deg)}
+}
+
+
+/* timer */
+.waitMe_progress.timer {width:40px;height:40px;margin:auto;border-width:2px;border-style:solid;border-radius:50%;box-sizing:border-box;position:relative;text-indent:-9999px}
+.waitMe_progress.timer > .waitMe_progress_elem1,
+.waitMe_progress.timer > .waitMe_progress_elem2 {border-radius:3px;position:absolute;width:2px;height:48%;left:50%;top:50%;margin-left:-1px;margin-top:-1px;animation:timer 1.25s infinite linear;transform-origin:1px 1px}
+.waitMe_progress.timer > .waitMe_progress_elem2 {height:40%;animation:timer 15s infinite linear}
+@keyframes timer {
+  0% {transform:rotate(0deg)}
+  100% {transform:rotate(360deg)}
+}
+
+
+/* pulse */
+.waitMe_progress.pulse {width:30px;height:30px;margin:auto;position:relative}
+.waitMe_progress.pulse > div {margin:auto;top:0;left:0;right:0;bottom:0;border-width:3px;border-style:solid;border-radius:50%;position:absolute;opacity:0;animation:pulsate 1s infinite ease-out}
+@keyframes pulsate {
+	0% {transform:scale(.1);opacity:0}
+	50% {opacity:1}
+	100% {transform:scale(1.2);opacity:0}
+}
+
+
+.loader {
+  font-size: 90px;
+  color:black;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease;
+  animation: load6 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.087em -0.825em 0 -0.42em #ffffff, -0.173em -0.812em 0 -0.44em #ffffff, -0.256em -0.789em 0 -0.46em #ffffff, -0.297em -0.775em 0 -0.477em #ffffff;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.338em -0.758em 0 -0.42em #ffffff, -0.555em -0.617em 0 -0.44em #ffffff, -0.671em -0.488em 0 -0.46em #ffffff, -0.749em -0.34em 0 -0.477em #ffffff;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.377em -0.74em 0 -0.42em #ffffff, -0.645em -0.522em 0 -0.44em #ffffff, -0.775em -0.297em 0 -0.46em #ffffff, -0.82em -0.09em 0 -0.477em #ffffff;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+}
+@keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.087em -0.825em 0 -0.42em #ffffff, -0.173em -0.812em 0 -0.44em #ffffff, -0.256em -0.789em 0 -0.46em #ffffff, -0.297em -0.775em 0 -0.477em #ffffff;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.338em -0.758em 0 -0.42em #ffffff, -0.555em -0.617em 0 -0.44em #ffffff, -0.671em -0.488em 0 -0.46em #ffffff, -0.749em -0.34em 0 -0.477em #ffffff;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.377em -0.74em 0 -0.42em #ffffff, -0.645em -0.522em 0 -0.44em #ffffff, -0.775em -0.297em 0 -0.46em #ffffff, -0.82em -0.09em 0 -0.477em #ffffff;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+}
+
+
+.cargando {
+    position: fixed;
+    width:100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.cargando>div {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.cargando>div:after {
+    content: "Por favor espere...";
+    animation: ios 1s infinite linear;
+    display: block;
+    width: 100%;
+    margin-top: 61px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@keyframes d_i {
+    from {width: 100%;
+       }
+    to {width: 1px;
+       
+        }
+}
+@keyframes i_d {
+    from {width: 1px;
+       }
+    to {width: 100%;
+       
+        }
+}
+span.chk {
+    position: relative;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+    display:block;
+    background-color:#DFDFDF;
+    min-width: 50px;
+    height: 21px;
+    border-radius:14px;
+    overflow: hidden;
+    width:190px;
+}
+span.chk input {
+    display:none;
+}
+span.chk input+label{
+    display:block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+span.chk input:checked+label::before {
+    content:string("Solo Factura");
+    color: #37BC9B;
+    display:inline-block;    
+    padding: 0px 8px;
+    text-align:right;
+    animation-fill-mode:forwards;
+    animation: d_i 0.5s linear forwards;
+    height:100%;
+}
+span.chk input+label::before {
+    content: "Factura + Pago";
+    color: #555555;
+    display:inline-block;
+    padding: 0px 8px;
+    animation-fill-mode:forwards;
+    animation: i_d 0.5s linear forwards;
+    height:100%;
+    text-align:right;
+}
+span.chk input+label::after {
+    content: "\f111";
+    color: #555555;  
+    text-align: right;
+    padding: 2.8px 5px;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation-fill-mode:forwards;
+    animation: d_i 0.5s linear forwards;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+     text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+}
+
+
+span.chk input:checked+label::after {
+    content: "\f111";
+    color: #37BC9B;  
+    padding: 2.8px 5px;
+    height:100%;
+    width:1px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+    animation-fill-mode:forwards;
+    animation: i_d 0.5s linear forwards;
+
+}

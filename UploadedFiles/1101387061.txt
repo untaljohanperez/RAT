@@ -1,0 +1,2 @@
+TipoIdentificacionCot,NroIdentificacionCot,NombreCotizante,TipoAfiliado,TipoIdentificacion,NroIdentificacion,NombreAfiliado,FNacimiento,Genero,FRadicacion,CorreoCotizante,
+CC,1101387061,SARA NAYDUT CACERES OLIVARES,COTIZANTE,CC,1101387061,SARA NAYDUT CACERES OLIVARES,03/04/1992,F,01/12/2015,babykcres_0901@hotmail.com
